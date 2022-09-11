@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root{
+    --Almost_White: hsl(0, 0%, 98%);
+    --Medium_Gray: hsl(0, 0%, 41%);
+    --Almost_Black: hsl(0, 0%, 8%);
+    --fontfamily:'Epilogue', sans-serif;;
+    --weight500:500;
+    --weight700:700;
+    --para:18px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fontfamily);
+    height: 200vh;
+}
+
+p{
+    font-size: var(--para);
+}
+
+button{
+    background: none;
+    outline: none;
+    border: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column; 
+    width:100%;  
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-block: 1rem;
+    position: relative;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-basis:20%;
+    align-items: center;
+}
+
+.logo{
+    width: 100%;
+}
+
+.bars-container{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list-container{
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: translateX(100%);
+    width: 65%;
+    background-color: white;
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+}
+.list-container ul{
+    list-style-type: none;
+    text-align: left;
+
+}
+.list-container li a{
+    text-decoration: none;
+    color: var(--Medium_Gray);
+    line-height: 30px;
+}
+
+.show{
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+.main-container{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.img-container{
+    width: 100%;
+}
+.img-container img{
+    width: 100%;
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-container h1{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top:2rem;
+    margin-bottom: 0;
+}
+.text-container p{
+    text-align: center;
+    color: var(--Medium_Gray);
+    margin-inline: 0.5em;
+    line-height: 2rem;
+}
+.text-container a{
+    margin-block: 20px;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-radius: 16px;
+    padding:1rem 2rem;
+}
+.footer-list{
+    margin-block: 22px;
+}
+.footer-list ul{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-list ul img{
+    width: 60px;
+}
+
+
+
+
+
+
